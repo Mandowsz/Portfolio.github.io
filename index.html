@@ -3,38 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Armando Bagason Jr. | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Mandss.</h1> 
-                
-           
+        <div class="container">
+            <div class="logo">
+                <h1>Aruuu.</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" id="ahome">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="trials.html">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="home">
-        <img src="Mands (2).jpg">
-        <h2>Hello!, I'm Armando Bagason Jr.</h2>
-        <p> A passionate and currently studying frontend developing
-             <br> with a skill of eye for design and a love for learnings
-             <br> but willing to explore new ideas.
-        </p>
-        
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="highlight"> Armando Bagason Jr.</span></h1>
+                <h2>Software Developer</h2>
+                <p>Computer Science Student who Develops Simple Websites and Mobile Apps. Combines academic knowledge with practical skills to build digital solutions while pursuing growth opportunities.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="photo_6287060749968851444_y.jpg" alt="Armando Bagason Jr.">
+            </div>
+        </div>
     </section>
-    
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image" style="height:120px; display:flex; align-items:center; justify-content:center;">
+                        <img src="VEL RA-Photoroom.png" alt="Velora" style="max-height:100px; max-width:100px; object-fit:contain;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Velora</h3>
+                        <p>Smart Cycling App with AI</p>
+                        <div class="project-tags">
+                            <span>FLUTTER</span>
+                            <span>FIREBASE</span>
+                        </div>
+                
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image" style="height:120px; display:flex; align-items:center; justify-content:center;">
+                        <img src="scanconnect.png" alt="Portfolio Website" style="max-height:100px; max-width:100px; object-fit:contain;">
+                    </div>
+                    <div class="project-info">
+                        <h3>ScanConnect</h3>
+                        <p>QR Code Attendance System.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image" style="height:120px; display:flex; align-items:center; justify-content:center;">
+                        <img src="aerosense.png" alt="Weather App" style="max-height:100px; max-width:100px; object-fit:contain;">
+                    </div>
+                    <div class="project-info">
+                        <h3>AeroSense</h3>
+                        <p>Air Quality Monitoring System.</p>
+                        <div class="project-tags">
+                            <span>FLUTTER</span>
+                            <span>FIREBASE</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image" style="height:120px; display:flex; align-items:center; justify-content:center;">
+                        <img src="mototyres.png" alt="Mototyres" style="max-height:100px; max-width:100px; object-fit:contain;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mototyres</h3>
+                        <p>E-Commerce website.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>REACT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>FLUTTER/DART</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>JAVA</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more skill categories as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>bagasonjr.armando.bscs2022@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+63 9701339979</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/mandowz" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mandszxc/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
