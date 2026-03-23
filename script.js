@@ -93,3 +93,19 @@ const yearEl = document.getElementById('year');
 if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
 }
+
+// Clickable project cards
+document.querySelectorAll('.project-card[data-href]').forEach((card) => {
+    card.style.cursor = 'pointer';
+
+    card.addEventListener('click', () => {
+        window.open(card.dataset.href, '_blank', 'noopener,noreferrer');
+    });
+
+    card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            window.open(card.dataset.href, '_blank', 'noopener,noreferrer');
+        }
+    });
+});
