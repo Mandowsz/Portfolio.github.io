@@ -162,7 +162,7 @@ nav a:focus-visible,
   display: block;
 }
 
-/* Home: center content vertically (keep text left-aligned) */
+/* HOME: vertically centered on desktop */
 #home.page.is-active {
   display: flex;
   align-items: center;
@@ -206,7 +206,7 @@ nav a:focus-visible,
   justify-content: center;
 }
 
-/* Hide internal scrollbar (still scrollable if content overflows) */
+/* Hide internal scrollbar */
 .page {
   scrollbar-width: none;
 }
@@ -222,7 +222,6 @@ nav a:focus-visible,
   grid-template-columns: 1.55fr 0.95fr;
   gap: 2.25rem;
   align-items: center;
-  min-height: 100%;
 }
 
 .eyebrow {
@@ -245,7 +244,7 @@ nav a:focus-visible,
   font-size: clamp(1.0rem, 2.0vw, 1.25rem);
   font-weight: 500;
   color: var(--muted);
-  margin-bottom: 1.0rem;
+  margin-bottom: 1rem;
 }
 
 .lead {
@@ -352,7 +351,7 @@ nav a:focus-visible,
 
 /* Shared sections */
 .section-title {
-  font-size: clamp(1.5rem, 2.6vw, 2.0rem);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
   letter-spacing: -0.02em;
   margin-bottom: 0.4rem;
 }
@@ -582,6 +581,7 @@ footer .container {
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
+    gap: 1.75rem;
   }
 
   .quick {
@@ -619,6 +619,105 @@ footer .container {
   nav ul {
     flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .app {
+    overflow: hidden;
+  }
+
+  .page {
+    padding: 1.75rem 0;
+  }
+
+  /* HOME MOBILE */
+  #home.page.is-active {
+    display: block;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.75rem;
+  }
+
+  .hero-content {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .subtitle,
+  .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .quick {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quick-item {
+    text-align: center;
+  }
+
+  .hero-side {
+    justify-items: center;
+  }
+
+  /* PROJECTS MOBILE CENTER */
+  #projects .section-title,
+  #projects .section-desc {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #projects .project-card {
+    text-align: center;
+  }
+
+  #projects .project-top {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  #projects .tags {
+    justify-content: center;
+  }
+
+  /* SKILLS MOBILE CENTER */
+  #skills .section-title,
+  #skills .section-desc {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #skills .card {
+    text-align: center;
+  }
+
+  #skills .card-title {
+    text-align: center;
+  }
+
+  #skills .pill-grid {
+    justify-content: center;
   }
 }
 
